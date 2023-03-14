@@ -1,0 +1,60 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+body #container {
+  background-color: #d3d3d3;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+}
+body #container > div {
+  width: 100%;
+}
+body #container .pageNum {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: white;
+  box-shadow: inset 2px 0 20px rgb(36, 36, 36);
+}
+body #container .pageNum h1 {
+  padding: 0 2rem;
+}
+body #container .scrollable {
+  flex: 1;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  gap: 0.5rem;
+}
+body #container .scrollable .content {
+  width: 100%;
+  background-color: white;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.7rem;
+}
+body #container .scrollable .content .title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+body #container .scrollable .content .title img {
+  width: 5rem;
+  height: 100%;
+}
+body #container .scrollable .content .title h1 {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
